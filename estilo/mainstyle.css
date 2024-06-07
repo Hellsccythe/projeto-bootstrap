@@ -93,7 +93,6 @@ section#destaque{
 
 .card-img-overlay:hover{
     display: block!important;
-    z-index: 100;
 }
 
 .card:hover{
