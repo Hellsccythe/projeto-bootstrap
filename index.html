@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="shortcut icon" href="imagens/frirenfavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilo/mainstyle.css">
+ 
 </head>
 <body>
     <header>
         <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
             <div class="container">
+                <img src="imagens/frirenfavicon.png" alt="" id="friren">
                 <a href="#" class="navbar-brand d-flex align-items-center">Anime life</a>
                 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
@@ -48,7 +52,57 @@
         </nav>
     </header>
 
-    
+    <div id="carousel">
+        <div class="carousel slide" id="carousel-anime" data-bs-wrap="true" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="imagens/friren-landscape.jpg" alt="Banner de Frieren" class="w-50 d-block m-auto imagem-carousel">
+                    <div class="carousel-caption">
+                        <a href="#">Friren e a jornada para o além</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imagens/one-piece-Landscape.png" alt="Banner de One Piece" class="w-50 d-block m-auto imagem-carousel">
+                    <div class="carousel-caption">
+                        <a href="#">One Piece</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imagens/SukaSuka-landscape.jpg" alt="Banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?" class="w-50 d-block m-auto imagem-carousel">
+                    <div class="carousel-caption">
+                        <a href="#">Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?</a>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="imagens/SKK-Landscape.png" alt="Banner de shingeki no kyojin" class="w-50 d-block m-auto imagem-carousel">
+                    <div class="carousel-caption">
+                        <a href="#">shingeki no kyojin</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev d-relative" type="button" data-bs-target="#carousel-anime" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" id="controle1"></span>
+            </button>
+            <button class="carousel-control-next d-relative" id="controle2" type="button" data-bs-target="#carousel-anime" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#carousel-anime" data-bs-slide-to="0">
+                    <img src="imagens/friren-landscape.jpg" alt="Imagem em miniatura do Banner de friren">
+                </button>
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1">
+                    <img src="imagens/one-piece-Landscape.png" alt="Imagem em miniatura do Banner de One Piece">
+                </button>
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2">
+                    <img src="imagens/SukaSuka-landscape.jpg" alt="Imagem em miniatura do banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?">
+                </button>
+                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="3">
+                    <img src="imagens/SKK-Landscape.png" alt="Imagem em miniatura do banner de shingeki no kyojin ">
+                </button>
+            </div>
+        </div>
+    </div>
 
     <footer class="p-4 bg-dark text-light text-center">&copy; Todos os direitos reservados.</footer>
 
