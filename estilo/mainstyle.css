@@ -76,6 +76,10 @@ div.carousel-caption a{
     border-radius: 5px;
 }
 
+div.carousel-caption a#skk{
+    width: 35vw; 
+}
+
 section#destaque{
     background-image: linear-gradient(to bottom, #2A1B1B, #552828, #2A1B1B);
     color: white;
