@@ -10,8 +10,8 @@
  
 </head>
 <body>
-    <header>
-        <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top">
+    <header id="cabecalho">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top" id="cab">
             <div class="container">
                 <img src="imagens/frirenfavicon.png" alt="" id="friren">
                 <a href="#" class="navbar-brand d-flex align-items-center">Anime life</a>
@@ -22,8 +22,8 @@
                 
                 <div class="collapse navbar-collapse justify-content-end" id="menu">
                     <div class="navbar-nav">
-                        <a href="#" class="nav-link active">Inicio</a>
-                        <a href="#" class="nav-link ">Destaque</a>
+                        <a href="#inicio" class="nav-link active">Inicio</a>
+                        <a href="#destaque" class="nav-link ">Destaque</a>
                         <a href="#" class="nav-link">Em Lançamento</a>
                         <div class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Lista de Animes</a>
                             <ul class="dropdown-menu dropdown-menu-end">
@@ -52,57 +52,113 @@
         </nav>
     </header>
 
-    <div id="carousel">
-        <div class="carousel slide" id="carousel-anime" data-bs-wrap="true" data-bs-ride="carousel">
-            <div class="carousel-inner">
-
-                <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="imagens/friren-landscape.jpg" alt="Banner de Frieren" class="w-50 d-block m-auto imagem-carousel">
-                    <div class="carousel-caption">
-                        <a href="#">Friren e a jornada para o além</a>
+    <section id="inicio">
+        <div id="carousel">
+            <div class="carousel slide" id="carousel-anime" data-bs-wrap="true" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="imagens/friren-landscape.jpg" alt="Banner de Frieren" class=" d-block m-auto imagem-carousel mt-5 mb-3">
+                        <div class="carousel-caption">
+                            <a href="#">Friren e a jornada para o além</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/one-piece-Landscape.png" alt="Banner de One Piece" class=" d-block m-auto imagem-carousel mt-5 mb-3">
+                        <div class="carousel-caption">
+                            <a href="#">One Piece</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/SukaSuka-landscape.jpg" alt="Banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?" class=" d-block m-auto imagem-carousel mt-5 mb-3">
+                        <div class="carousel-caption">
+                            <a href="#">Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/SKK-Landscape.png" alt="Banner de shingeki no kyojin" class=" d-block m-auto imagem-carousel mt-5 mb-3">
+                        <div class="carousel-caption">
+                            <a href="#">shingeki no kyojin</a>
+                        </div>
                     </div>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="imagens/one-piece-Landscape.png" alt="Banner de One Piece" class="w-50 d-block m-auto imagem-carousel">
-                    <div class="carousel-caption">
-                        <a href="#">One Piece</a>
-                    </div>
+                <button class="carousel-control-prev d-relative" type="button" data-bs-target="#carousel-anime" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" id="controle1"></span>
+                </button>
+                <button class="carousel-control-next d-relative" id="controle2" type="button" data-bs-target="#carousel-anime" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" class="active" data-bs-target="#carousel-anime" data-bs-slide-to="0">
+                        <img src="imagens/friren-landscape.jpg" alt="Imagem em miniatura do Banner de friren">
+                    </button>
+                    <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1">
+                        <img src="imagens/one-piece-Landscape.png" alt="Imagem em miniatura do Banner de One Piece">
+                    </button>
+                    <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2">
+                        <img src="imagens/SukaSuka-landscape.jpg" alt="Imagem em miniatura do banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?">
+                    </button>
+                    <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="3">
+                        <img src="imagens/SKK-Landscape.png" alt="Imagem em miniatura do banner de shingeki no kyojin ">
+                    </button>
                 </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="imagens/SukaSuka-landscape.jpg" alt="Banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?" class="w-50 d-block m-auto imagem-carousel">
-                    <div class="carousel-caption">
-                        <a href="#">Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?</a>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="3000">
-                    <img src="imagens/SKK-Landscape.png" alt="Banner de shingeki no kyojin" class="w-50 d-block m-auto imagem-carousel">
-                    <div class="carousel-caption">
-                        <a href="#">shingeki no kyojin</a>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev d-relative" type="button" data-bs-target="#carousel-anime" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" id="controle1"></span>
-            </button>
-            <button class="carousel-control-next d-relative" id="controle2" type="button" data-bs-target="#carousel-anime" data-bs-slide="next">
-                <span class="carousel-control-next-icon"></span>
-            </button>
-            <div class="carousel-indicators">
-                <button type="button" class="active" data-bs-target="#carousel-anime" data-bs-slide-to="0">
-                    <img src="imagens/friren-landscape.jpg" alt="Imagem em miniatura do Banner de friren">
-                </button>
-                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1">
-                    <img src="imagens/one-piece-Landscape.png" alt="Imagem em miniatura do Banner de One Piece">
-                </button>
-                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2">
-                    <img src="imagens/SukaSuka-landscape.jpg" alt="Imagem em miniatura do banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?">
-                </button>
-                <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="3">
-                    <img src="imagens/SKK-Landscape.png" alt="Imagem em miniatura do banner de shingeki no kyojin ">
-                </button>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section id="destaque" class="pt-5">
+        <div class="container">
+            <div class="text-center">
+                <h2>Destaque</h2>
+                <p class="lead">Os Animes mais populares da Temporada</p>
+            </div>
+
+            <div class="row my-5 align-items-center justify-content-center">
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/friren.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/one-piece.png" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/shuumatsu.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/SKK.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            </div>
+
+    </section>
+
+    <section id="lancamento" class="pt-5">
+        <div class="container">
+            <div class="text-center">
+                <h2>Em lançamento</h2>
+                <p class="lead">Animes em lançamento da Temporada de 2024</p>
+            </div>
+
+        </div>
+    </section>
 
     <footer class="p-4 bg-dark text-light text-center">&copy; Todos os direitos reservados.</footer>
 
