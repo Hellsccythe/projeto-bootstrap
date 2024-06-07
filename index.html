@@ -13,8 +13,8 @@
     <header id="cabecalho">
         <nav class="navbar bg-dark navbar-dark navbar-expand-sm sticky-top" id="cab">
             <div class="container">
-                <img src="imagens/frirenfavicon.png" alt="" id="friren">
-                <a href="#" class="navbar-brand d-flex align-items-center">Anime life</a>
+                <img src="imagens/frirenfavicon.png" alt="icone da friren chibi" id="friren">
+                <a href="#inicio" class="navbar-brand d-flex align-items-center">Anime life</a>
                 
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
                     <div class="navbar-nav">
                         <a href="#inicio" class="nav-link active">Inicio</a>
                         <a href="#destaque" class="nav-link ">Destaque</a>
-                        <a href="#" class="nav-link">Em Lançamento</a>
+                        <a href="#lancamento" class="nav-link">Em Lançamento</a>
                         <div class="dropdown"><a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Lista de Animes</a>
                             <ul class="dropdown-menu dropdown-menu-end">
                                 <li><a href="#" class="dropdown-item">Letra A-C</a></li>
@@ -63,6 +63,12 @@
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="3000">
+                        <img src="imagens/unamed-memory-landscape.jpg" alt="Banner de Unamed Memory" class=" d-block m-auto imagem-carousel mt-5 mb-3">
+                        <div class="carousel-caption">
+                            <a href="#">Unamed Memory</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="imagens/one-piece-Landscape.png" alt="Banner de One Piece" class=" d-block m-auto imagem-carousel mt-5 mb-3">
                         <div class="carousel-caption">
                             <a href="#">One Piece</a>
@@ -92,12 +98,15 @@
                         <img src="imagens/friren-landscape.jpg" alt="Imagem em miniatura do Banner de friren">
                     </button>
                     <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="1">
-                        <img src="imagens/one-piece-Landscape.png" alt="Imagem em miniatura do Banner de One Piece">
+                        <img src="imagens/unamed-memory-landscape.jpg" alt="Imagem em miniatura do Banner de Unamed Memory">
                     </button>
                     <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="2">
-                        <img src="imagens/SukaSuka-landscape.jpg" alt="Imagem em miniatura do banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?">
+                        <img src="imagens/one-piece-Landscape.png" alt="Imagem em miniatura do Banner de One Piece">
                     </button>
                     <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="3">
+                        <img src="imagens/SukaSuka-landscape.jpg" alt="Imagem em miniatura do banner de Shūmatsu Nani Shitemasu ka? Isogashii Desu ka? Sukutte Moratte Ii Desu ka?">
+                    </button>
+                    <button type="button" data-bs-target="#carousel-anime" data-bs-slide-to="4">
                         <img src="imagens/SKK-Landscape.png" alt="Imagem em miniatura do banner de shingeki no kyojin ">
                     </button>
                 </div>
@@ -113,15 +122,24 @@
             </div>
 
             <div class="row my-5 align-items-center justify-content-center">
-                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
                     <div class="card border-0">
                         <div class="card-body text-center p-0">
-                            <img src="imagens/friren.png" alt="" class="card-img">
+                            <img src="imagens/friren.png" alt="Banner de friren portrait" class="card-img">
+                            <p class="card-img-overlay">Sinopse: Frieren é uma elfa maga que continuou vivendo mesmo depois da morte dos heróis. Ela segue novamente a jornada em que se aventurou outrora com eles.Muitos encontros e eventos insubstituíveis que coloriram a jornada de tempos atrás, também o fazem agora. A história vai relembrando o dia a dia dos heróis. Vai ligando as recordações deles.“Uma fantasia pós-aventura!”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/unamed-memory600px.jpg" alt="Banner de unamed-memory portrait" class="card-img">
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
                     <div class="card border-0">
                         <div class="card-body text-center p-0">
                             <img src="imagens/one-piece.png" alt="" class="card-img">
@@ -129,7 +147,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
                     <div class="card border-0">
                         <div class="card-body text-center p-0">
                             <img src="imagens/shuumatsu.jpg" alt="" class="card-img">
@@ -137,7 +155,7 @@
                     </div>
                 </div>
 
-                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-3">
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
                     <div class="card border-0">
                         <div class="card-body text-center p-0">
                             <img src="imagens/SKK.jpg" alt="" class="card-img">
@@ -155,6 +173,49 @@
             <div class="text-center">
                 <h2>Em lançamento</h2>
                 <p class="lead">Animes em lançamento da Temporada de 2024</p>
+            </div>
+
+            <div class="row my-5 align-items-center justify-content-center">
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/Maou-Gakuin no-Futekigousha-II.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/maou-no-ore-ga-dorei-elf-wo-yome-ni-shitanda-ga-dou-medereba-ii.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/date-a-live-V.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/Ookami-to-Koushinryou-Merchant-meets-the-Wise-Wolf.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-5 col-md-4 col-5 col-lg-3 col-xl-2">
+                    <div class="card border-0">
+                        <div class="card-body text-center p-0">
+                            <img src="imagens/Kono Subarashii Sekai ni Shukufuku wo! 3.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>

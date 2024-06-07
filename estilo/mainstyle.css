@@ -19,6 +19,14 @@ body{
     margin-right: 10px;
 }
 
+.dropdown-menu{
+    background-color: #802626;
+}
+
+.dropdown-item{
+    color: white;
+}
+
 #carousel{
     background-image: linear-gradient(to bottom, #2A1B1B, #552828, #2A1B1B);
     border-radius: 5px;
@@ -70,9 +78,27 @@ div.carousel-caption a{
 
 section#destaque{
     background-image: linear-gradient(to bottom, #2A1B1B, #552828, #2A1B1B);
-    border-radius: 5px;
     color: white;
 
+}
+
+.card-img-overlay{
+    background-color: rgba(0, 0, 0, 0.727);
+    height: 101%;
+    color: white;    
+    font-size: 0.6em;
+    padding: 10px 5px;
+    display: none; 
+}
+
+.card-img-overlay:hover{
+    display: block!important;
+    z-index: 100;
+}
+
+.card:hover{
+    transform: scale(1.15);
+    cursor: pointer;
 }
 
 #p{
@@ -94,7 +120,10 @@ img.card-img{
 
 section#lancamento{
     background-image: linear-gradient(to bottom, #2A1B1B, #552828, #2A1B1B);
-    border-radius: 5px;
     color: white;
+    margin-top: -7.2vh;
+}
+
+footer{
     margin-top: -7.2vh;
 }
