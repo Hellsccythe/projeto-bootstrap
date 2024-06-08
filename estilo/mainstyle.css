@@ -34,7 +34,8 @@ body{
 }
 
 .carousel-item img{
-    height: 50vh;
+    min-height: 35vh;
+    width: 50vw;
 }
 
 .carousel-indicators img{
@@ -129,4 +130,11 @@ section#lancamento{
 
 footer{
     margin-top: -7.2vh;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item img{
+        height: 50vh;
+        width: 100vw;
+    }
 }
