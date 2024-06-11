@@ -34,7 +34,7 @@ body{
 }
 
 .carousel-item img{
-    min-height: 35vh;
+    height: 55vh;
     width: 50vw;
 }
 
@@ -93,15 +93,20 @@ section#destaque{
     color: white;    
     font-size: 0.6em;
     padding: 10px 5px;
-    display: none; 
+    opacity: 0;
+    text-align: justify;
+}
+
+#holo{
+    font-size: 0.58em; 
 }
 
 .card-img-overlay:hover{
-    display: block!important;
+    opacity: 1;
 }
 
 .card:hover{
-    transform: scale(1.15);
+    transform: scale(1.25);
     cursor: pointer;
 }
 
@@ -134,7 +139,7 @@ footer{
 
 @media screen and (max-width: 768px) {
     .carousel-item img{
-        min-height: 30vh;
+        height: 45vh;
         width: 92vw;
     }
 }
