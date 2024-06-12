@@ -84,21 +84,18 @@ div.carousel-caption a#skk{
 section#destaque{
     background-image: linear-gradient(to bottom, #2A1B1B, #552828, #2A1B1B);
     color: white;
-
 }
 
 .card-img-overlay{
+    display: block;
     background-color: rgba(0, 0, 0, 0.727);
     height: 101%;
     color: white;    
-    font-size: 0.6em;
+    font-size: 1em;
     padding: 10px 5px;
     opacity: 0;
     text-align: justify;
-}
-
-#holo{
-    font-size: 0.58em; 
+    margin: auto;
 }
 
 .card-img-overlay:hover{
@@ -106,7 +103,7 @@ section#destaque{
 }
 
 .card:hover{
-    transform: scale(1.25);
+    transform: scale(1.05);
     cursor: pointer;
 }
 
@@ -120,11 +117,9 @@ div.card{
 
 
 img.card-img{
-    height: 40vh;
-    max-height: 55vh;
-
     cursor: pointer;
     box-shadow: 5px 5px 5px #2A1B1B;
+    height: 60vh;
 }
 
 section#lancamento{
